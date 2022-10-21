@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyCubeBackup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href=" logo.4183e712.png">
+    
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://kit.fontawesome.com/d34f3400af.js" crossorigin="anonymous"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /*轮播图*/
+        .swiper-pagination-bullet {
+            background-color: #625bf6;
+            width: 12px;
+            height: 12px;
+        }
+
+        .swiper-slide {
+            opacity: 30%;
+            margin-top: 25px;
+        }
+
+        .swiper-slide-active {
+            margin-top: 0px;
+            padding-top: 15px;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullets {
+            margin-left: 0px;
+        }
+        /*滑动动画*/
+        /* Animations */
+        [data-aos="to-transparent"] {
+            background-color: transparent;
+            border-bottom-width: 0;
+            height: 80px;
+            transition-property: background-color,border-bottom-width,height;
+        }
+
+        [data-aos="to-transparent"].aos-animate {
+            background-color: white;
+            border-bottom-width: 2px;
+            height: 72px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);;
+        }
+
+    </style>
+  <link rel="stylesheet" href=" index.ac0d0060.css">
+</head>
+<body class="" id="body">
+<div class="bg-hero-bg w-full h-screen">
+    <!--header-->
+    <div id="header" class="flex justify-between items-center w-full   fixed bg-white z-10 " data-aos="to-transparent" data-aos-offset="850"
+         data-aos-anchor="#body"
+         data-aos-duration="600">
+        <div class="flex items-center ml-16">
+            <img class="w-10 mr-2" src=" logo.4183e712.png">
+            <h1 class="text-3xl font-medium text-primary tracking-wide">CubeBackup</h1>
+        </div>
+        <div class="flex items-center justify-between space-x-8 mr-16 text-primary font-bold">
+            <div class="text-active">
+                <button>主页</button>
+            </div>
+            <div>
+                <button>产品</button>
+            </div>
+            <div>
+                <button>定价</button>
+            </div>
+            <div>
+                <button>文档</button>
+            </div>
+            <div>
+                <button>联系我们</button>
+            </div>
+        </div>
+    </div>
+    <!--第一页-->
+    <div id="content-page-1" class="w-full h-4/5 flex items-center pt-28">
+        <div id="left-content" class="pl-16 w-2/5" >
+            <h1 class="text-primary font-normal text-5xl leading-tight" data-aos="fade-up" >自主托管的<br>Google Workspace &<br>Microsoft 365
+                备份方案</h1>
+            <h2 class="text-third py-8 text-xl font-light whitespace-pre" data-aos="fade-up" data-aos-delay="200">全面保护您的关键业务数据, 安全备份至本地存储或私有云存储</h2>
+            <div class="space-x-4" data-aos="fade-up" data-aos-delay="400">
+                <button class="w-48 h-12 bg-active font-bold text-white">免费试用</button>
+                <button class="w-48 h-12 border border-2 border-active font-bold text-active">在线演示</button>
+            </div>
+        </div>
+        <div id="right-content-image" class="w-3/5 -ml-24" data-aos="zoom-out">
+            <img class="brightness-125" src=" home-hero-img.cba074bd.png">
+        </div>
+    </div>
+    <!--第二页-->
+    <div id="content-page-2" class="w-full ">
+        <div id="animate-content" class="flex mx-10 h-64 bg-white bg-opacity-10" data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
+            <div id="content-1" class="flex-1 mx-8 rounded-lg shadow-lg">
+                <div class="p-10 space-y-8 ">
+                    <h1 class="font-medium text-xl text-primary ">
+                        <img src=" google-cube-logo.57226179.svg" class="inline-block w-10">
+                        CubeBackup for Google Workspace
+                    </h1>
+                    <p class="text-primary font-extralight">将您的 Google Driver, Shared drives, Gmail, Contacts,
+                        以及Calendar业务数据全面备份至本地存储或云存储.</p>
+                    <a class="block text-active font-medium">了解更多 <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div id="content-2" class="flex-1 mx-8 rounded-lg shadow-lg">
+                <div class="p-10 space-y-8 ">
+                    <h1 class="font-medium text-xl text-primary ">
+                        <img src=" microsoft-cube-logo.3d41251f.svg" class="inline-block w-10">
+                        CubeBackup for Microsoft 365
+                    </h1>
+                    <p class="text-primary font-extralight">在本地或云存储中备份并保护包括 OneDriver for Business, Exchange Online,
+                        SharePoint Online 在内的Microsoft 365 数据.</p>
+                    <a class="block text-active font-medium">了解更多 <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full mt-32 space-y-4" >
+            <h1 class="text-primary text-4xl font-normal text-center my-8" data-aos="fade-up">您的数据, 全权掌控</h1>
+            <p class="text-primary font-extralight text-xl text-center" data-aos="fade-up" data-aos-delay="200">通过备份至本地存储或个人云存储,
+                CubeBackup保证您的关键业务数据完全由自主掌控.</p>
+            <img src=" home-choice-img.50682458.png" class="w-4/6 mx-auto">
+        </div>
+    </div>
+    <!--第三页-->
+    <div id="content-page-3" class="w-full">
+        <div class="mt-12">
+            <h1 class="font-normal text-4xl text-primary text-center my-16" data-aos="fade-up">功能强大兼顾低使用成本</h1>
+            <div class="flex mx-20 ">
+                <div class="flex-1 space-y-4">
+                    <div id="left-area-1" class="flex-col space-y-3.5">
+                    <span>
+                        <i class="fa-solid fa-circle text-active text-sm ring-active ring-8 ring-opacity-40 rounded-full"></i>
+                        <h2 class="text-xl inline-block mx-4 text-primary" data-aos="fade-right">不限制备份版本数</h2>
+                    </span>
+                        <p class="px-10 text-third font-extralight" data-aos="fade-right" data-aos-delay="200">
+                            如同Git与Time Machine, CubeBackup可以为您的Google Workspace 与 Microsoft 365
+                            创建无限次的历史备份版本,从而保证可以进行任意数据版本的精确恢复.
+                        </p>
+                    </div>
+                    <div id="left-area-2" class="flex-col space-y-3.5" >
+                    <span>
+                        <i class="fa-solid fa-circle text-active ring-active ring-8 text-sm ring-opacity-40 rounded-full"></i>
+                        <h2 class="text-xl inline-block mx-4 text-primary" data-aos="fade-right">自动进行的增量备份</h2>
+                    </span>
+                        <p class="px-10 text-third font-extralight" data-aos="fade-right" data-aos-delay="200">
+                            每小时在后天自动运行的备份任务全面保护您的数据,增量备份算法帮助节约您的带宽和磁盘空间.
+                        </p>
+                    </div>
+                    <div id="left-area-3" class="flex-col space-y-3.5">
+                    <span>
+                        <i class="fa-solid fa-circle text-active ring-active ring-8 text-sm ring-opacity-40 rounded-full"></i>
+                        <h2 class="text-xl inline-block mx-4 text-primary" data-aos="fade-right" >性价比超高的定价</h2>
+                    </span>
+                        <p class="px-10 text-third font-extralight" data-aos="fade-right" data-aos-delay="200">
+                            企业版本 $ 5USD / 用户 / 年;<br>
+                            教育 & 非盈利版本 $ 2 USD / 用户 /年;<br>
+                            免费备份 Shared drives 与 SharePoint sites;
+                        </p>
+                    </div>
+                </div>
+                <div id="right-area" class="flex-1" data-aos="fade-left">
+                    <img src=" home-backup-img.04a07f88.png" class="px-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第四页-->
+    <div id="content-page-4" class="flex-col bg-forth pb-14">
+        <div class="space-y-6 pt-24" >
+            <h1 class="text-center text-4xl text-primary font-normal " data-aos="fade-up">全方位的数据保护方案</h1>
+            <h2 class="text-center text-xl text-third font-extralight" data-aos="fade-up" data-aos-delay="200">数据安全和隐私问题是重中之重.</h2>
+        </div>
+        <div class="grid grid-cols-4 mx-20 my-10">
+            <div class="border-l-2 border-dashed space-y-2" data-aos="fade-up">
+                <img src=" home-security-icon1.5485e809.png" class="w-1/5 filter hue-rotate-74 saturate-6 ml-6">
+                <h2 class="text-xl text-primary font-medium border-l-2 border-active border-solid px-6">GDPR规范</h2>
+                <p class="text-third font-extralight mx-6">CubeBackup严格遵守GDPR, CCPA和其他数据保护规范的要求.</p>
+            </div>
+            <div class="border-l-2 border-dashed space-y-2" data-aos="fade-up" data-aos-delay="100">
+                <img src=" home-security-icon2.d72f0f4b.png" class="w-1/5 filter hue-rotate-74 saturate-6 ml-6">
+                <h2 class="text-xl text-primary font-medium border-l-2 border-active border-solid px-6">强加密算法</h2>
+                <p class="text-third font-extralight mx-6">由 TLS 1.2 协议进行数据传输, 并通过 AES 与 RSA 对备份数据进行加密.</p>
+            </div>
+            <div class="border-l-2 border-dashed space-y-2" data-aos="fade-up" data-aos-delay="200">
+                <img src=" home-security-icon3.77b0d6b7.png" class="w-1/5 filter hue-rotate-74 saturate-6 ml-6">
+                <h2 class="text-xl text-primary font-medium border-l-2 border-active border-solid px-6">双步验证</h2>
+                <p class="text-third font-extralight mx-6">通过邮件双步验证登录 CubeBackup 控制台</p>
+            </div>
+            <div class="border-l-2 border-dashed space-y-2" data-aos="fade-up" data-aos-delay="300">
+                <img src=" home-security-icon4.8bdd886f.png" class="w-1/5 filter hue-rotate-74 saturate-6 ml-6">
+                <h2 class="text-xl text-primary font-medium border-l-2 border-active border-solid px-6">审计日志</h2>
+                <p class="text-third font-extralight mx-6">不可变更的审计日志确保可以追踪所有管理员的历史操作记录.</p>
+            </div>
+        </div>
+    </div>
+    <!--第五页-->
+    <div id="content-page-5" class="flex-col space-y-8">
+        <div class="pt-24 space-y-6">
+            <h1 class="text-center text-4xl text-primary font-normal" data-aos="fade-up">我们的客户</h1>
+            <h2 class="text-center text-xl text-third font-extralight" data-aos="fade-up" data-aos-delay="200">在全球,超过50个国家的1,000加企业机构的客户新来并使用 CubeBackup
+                的备份保护.</h2>
+        </div>
+        <div class="w-full ">
+            <div class="rounded-lg flex mx-16 bg-global-bg h-44 bg-active text-center items-center shadow-xl">
+                <div class="flex-1 space-y-5" data-aos="zoom-out">
+                    <h1 class="text-white text-6xl">1,000 +</h1>
+                    <h2 class="text-white text-xl font-light">企业机构</h2>
+                </div>
+                <div class="flex-1 space-y-5" data-aos="zoom-out">
+                    <h1 class="text-white text-6xl">200,000 +</h1>
+                    <h2 class="text-white text-xl font-light">全球用户</h2>
+                </div>
+                <div class="flex-1 space-y-5" data-aos="zoom-out">
+                    <h1 class="text-white text-6xl">95% +</h1>
+                    <h2 class="text-white text-xl font-light">续费率</h2>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="grid grid-cols-4 p-14">
+                <div class="border-b-2 border-dashed border-r-2">
+                    <img src=" home-clients-logo9.c20f461f.png" class="px-16 py-3">
+                </div>
+                <div class="border-b-2 border-dashed  border-r-2 ">
+                    <img src=" home-clients-logo1.02c651b3.png" class="px-16 py-3">
+                </div>
+                <div class="border-b-2 border-dashed border-r-2">
+                    <img src=" home-clients-logo5.9f99a3db.png" class="px-16 py-3">
+                </div>
+                <div class="border-dashed border-b-2">
+                    <img src=" home-clients-logo7.4a956929.png" class="px-16 py-3">
+                </div>
+                <div class="border-r-2 border-dashed">
+                    <img src=" home-clients-logo2.a66de2c5.png" class="px-16 py-3">
+                </div>
+                <div class="border-r-2 border-dashed">
+                    <img src=" home-clients-logo3.45a2baff.png" class="px-16 py-3">
+                </div>
+                <div class="border-r-2 border-dashed">
+                    <img src=" home-clients-logo8.b75e9efe.png" class="px-16 py-3">
+                </div>
+                <div>
+                    <img src="data:image/png;base64,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" class="px-16 py-3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第六页-->
+    <div id="content-page-6" class="bg-fifth pb-20">
+        <div class=" pt-16 space-y-4 px-24">
+            <h1 class="text-center text-4xl text-primary font-normal" data-aos="fade-up">CubeBackup 的用户评价</h1>
+            <div id="swiper" class="swiper mySwiper w-full flex px-12 flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper py-20">
+                    <!--1. -->
+                    <div class="swiper-slide bg-white shadow-2xl">
+                        <i class="fa-solid fa-quote-left text-5xl text-active p-8 "></i>
+                        <p class="text-third px-8">Everything you have built just works so effortlessly and efficiently.
+                            From installation, to
+                            configuration, to user and finally to payment. Every step of the way was been completely
+                            smooth
+                            and painless. Something that is very rare in today's world of software. Please, keep up the
+                            good
+                            work. You guys are rocking it!!!
+                        </p>
+                        <div class="flex">
+                            <div class="p-8">
+                                <h1 class="text-primary text-xl py-2">Rocky Borrego</h1>
+                                <h3 class="text-gray-400  font-extralight">Founder · NextStep Cloud</h3>
+                            </div>
+                            <div class="pt-10 text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--2. -->
+                    <div class="swiper-slide bg-white shadow-2xl">
+                        <i class="fa-solid fa-quote-left text-5xl text-active p-8 "></i>
+                        <p class="text-third px-8">Overall my experience has been Excellent. Good Job Cube Backup Team.
+                            Highly recommended product. I've lived through a couple of product updates also, these were
+                            applied quickly and seamlessly. And yes I have had to restore files, it works.
+
+                        </p>
+                        <div class="flex">
+                            <div class="p-8">
+                                <h1 class="text-primary text-xl py-2">Rocky Borrego</h1>
+                                <h3 class="text-gray-400  font-extralight">Founder · NextStep Cloud</h3>
+                            </div>
+                            <div id="star-icon" class="pt-10 text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--3. -->
+                    <div class="swiper-slide bg-white shadow-2xl">
+                        <i class="fa-solid fa-quote-left text-5xl text-active p-8 "></i>
+                        <p class="text-third px-8">CubeBackup is an extremely good product. The pricing for education
+                            can't be beat, and the user interface is outstanding. The number of missed backup objects is
+                            very, very low.
+
+                        </p>
+                        <div class="flex">
+                            <div class="p-8">
+                                <h1 class="text-primary text-xl py-2">Rocky Borrego</h1>
+                                <h3 class="text-gray-400  font-extralight">Founder · NextStep Cloud</h3>
+                            </div>
+                            <div class="pt-10 text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--4. -->
+                    <div class="swiper-slide bg-white shadow-2xl">
+                        <i class="fa-solid fa-quote-left text-5xl text-active p-8 "></i>
+                        <p class="text-third px-8"> The ease of use is outstanding. Setup is reasonably strightforward,
+                            and the setup documentation is great at hand-holding through the process. Once set up, it
+                            just works, with very little required in the way of configuration. Backups occur reliably,
+                            regularly, and quickly, and restores are a breeze. Self-hosted is a big plus for me, but
+                            it's also capable of using any S3-compatible block store as a backend.
+
+
+                        </p>
+                        <div class="flex">
+                            <div class="p-8">
+                                <h1 class="text-primary text-xl py-2">Rocky Borrego</h1>
+                                <h3 class="text-gray-400  font-extralight">Founder · NextStep Cloud</h3>
+                            </div>
+                            <div class="pt-10 text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--5. -->
+                    <div class="swiper-slide bg-white shadow-2xl">
+                        <i class="fa-solid fa-quote-left text-5xl text-active p-8 "></i>
+                        <p class="text-third px-8">The value option with awesome support. Value Licencing model. Ability
+                            to create local backups with time machine like rollbacks. VERY VERY RESPONSIVE AND
+                            COMPREHENSIVE SUPPORT. VERY QUICK RESPONSE TIMES. NAS share only access to write ransom ware
+                            safe backups.
+
+
+                        </p>
+                        <div class="flex">
+                            <div class="p-8">
+                                <h1 class="text-primary text-xl py-2">Rocky Borrego</h1>
+                                <h3 class="text-gray-400  font-extralight">Founder · NextStep Cloud</h3>
+                            </div>
+                            <div class="pt-10 text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--6. -->
+                    <div class="swiper-slide bg-white shadow-2xl">
+                        <i class="fa-solid fa-quote-left text-5xl text-active p-8 "></i>
+                        <p class="text-third px-8"> It is truly unfair that a really good company with great service
+                            does not have a single review. It is their absence which made me initially wary of the
+                            CubeBackup. Yet, after trying, I am now fully convinced that it was a right choice. Take it,
+                            you will not regret it! The main pros are : Fast support team - my emails were answered
+                            quickly and comprehensively. Good pricing, compared to the main alternatives. Very fast
+                            backup speed, it is possible to set up even hourly backup updates.
+
+
+                        </p>
+                        <div class="flex">
+                            <div class="p-8">
+                                <h1 class="text-primary text-xl py-2">Rocky Borrego</h1>
+                                <h3 class="text-gray-400  font-extralight">Founder · NextStep Cloud</h3>
+                            </div>
+                            <div class="pt-10 text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div id="footer" class="border-t-1 border-b-1 border-solid border-gray-400 px-16 flex items-center justify-between py-24 bg-fifth bg-footer-bg">
+        <div class="flex-col space-y-2.5 ">
+            <h1 class="text-3xl font-medium text-primary tracking-wide">
+                <img src=" logo.4183e712.png" class="w-10 inline-block">
+                CubeBackup
+            </h1>
+            <p class="text-third font-light text-sm">备份 Google Workspace 与 Microsoft 365 的更好方案选择</p>
+            <div class="space-x-2">
+                <i class="fa-brands fa-square-twitter text-2xl" style="color: #4da9e8"></i>
+                <i class="fa-brands fa-square-facebook text-2xl" style="color: #4a66ad"></i>
+                <i class="fa-brands fa-linkedin text-2xl" style="color: #3375b0"></i>
+            </div>
+            <span class="text-primary">
+                <i class="fa-solid fa-globe"></i>
+                <span class="text-sm">
+                    简体中文
+                </span>
+            </span>
+        </div>
+        <div class="flex space-x-32 flex-1 pl-44 ">
+            <div class="flex-col text-primary text-sm space-y-3">
+                <h1 class="text-lg text-primary font-bold">产品</h1>
+                <h2>CubeBackup for Google Workspace</h2>
+                <h2>CubeBackup for Microsoft 365</h2>
+                <h2>定价</h2>
+            </div>
+            <div class="flex-col text-primary text-sm space-y-3">
+                <h1 class="text-lg text-primary font-bold">资源</h1>
+                <h2>文档</h2>
+                <h2>博客</h2>
+                <h2>推介计划</h2>
+            </div>
+            <div class="flex-col text-primary text-sm space-y-3">
+                <h1 class="text-lg text-primary font-bold">法律与许可</h1>
+                <h2>GDPR</h2>
+                <h2>服务条款</h2>
+                <h2>隐私政策</h2>
+            </div>
+        </div>
+
+    </div>
+    <div id="end" class="w-full h-20 flex items-center justify-center bg-end">
+        <h1 class="text-primary">&copy; Copyright <span class="font-bold">CubeBackup</span>. All Rights Reserved</h1>
+    </div>
+</div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    let swiper = new Swiper(".mySwiper", {
+        centeredSlides: true,
+        slidesPerView: "3",
+        loop: true,
+        spaceBetween: 40,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+    });
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+</script>
+</body>
+</html>
